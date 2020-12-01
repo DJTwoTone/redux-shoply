@@ -13,7 +13,7 @@ function Routes() {
             <Route path='/products/:id' exact>
                 <ProductDetails />
             </Route>
-            <Route path='cart' exact>
+            <Route path='/cart' exact>
                 <Cart />
             </Route>
             <Redirect to='/' />

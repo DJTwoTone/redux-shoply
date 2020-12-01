@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from './actionTypes';
+import { ADD_TO_CART, REMOVE_FROM_CART, APPLY_DISCOUNT } from './actionTypes';
 
 export function addToCart(id) {
     return {
@@ -12,4 +12,8 @@ export function removeFromCart(id) {
         type: REMOVE_FROM_CART,
         id
     };
+}
+
+export function applyDiscount(discount) {
+    return {type: APPLY_DISCOUNT, discount};
 }

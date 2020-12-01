@@ -6,7 +6,7 @@ import CartIcons from './CartIcons';
 function ProductList() {
     const products = useSelector(st => st.products);
     const productCards = Object.keys(products).map(id => (
-        <div key={id}>
+        <div className="col-md-3 m-2" key={id}>
             <div className="card">
                 <div className="card-body">
                     <h2 className="card-title text-center">

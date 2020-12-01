@@ -13,8 +13,8 @@ function Navbar () {
             <Link to="/" className="navbar-brand text-dark">SHOPLY</Link>
             <ul className="navbar-nav flex-row">
                 <li className="nav-item">
-                    <span className="navbar-text">
-                        {cartCount} {units} (${cartValue})
+                    <span className="navbar-text mx-3">
+                        {cartCount} {units} ${cartValue}
                     </span>
                 </li>
                 <li className="nav-item">

@@ -9,14 +9,14 @@ function CartIcons({id}) {
     const remove = () => dispatch(removeFromCart(id));
 
     return (
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-center">
             <i
             onClick={add}
-            className="CartIcon fas fa-cart-plus text-success"
+            className="CartIcon fas fa-cart-plus text-success mx-2"
              />
              <i
              onClick={remove}
-             className="CartIcon fas fa-cart-arrow-down text-danger"
+             className="CartIcon fas fa-cart-arrow-down text-danger mx-2"
               />
         </div>
     )

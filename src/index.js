@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import rootReducer from './rootReducer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,7 +18,7 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Route path='/' component={App} />
+      <App />
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')
